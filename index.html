@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Ifeoma Chuks | Product Marketing Data Analyst</title>
+  <title>Ifeoma Chuks | Marketing Data Analyst</title>
   <style>
     :root {
       --bg: #0b0f19;
@@ -14,6 +14,8 @@
       --accent-hover: #0ea5e9;
       --border: #22304d;
       --green: #4ade80;
+      --amber: #fbbf24;
+      --red: #f87171;
     }
     * {
       box-sizing: border-box;
@@ -55,7 +57,7 @@
       color: var(--muted);
       text-decoration: none;
       margin-left: 1.2rem;
-      font-size: 0.92rem;
+      font-size: 0.9rem;
       transition: color 0.2s ease;
     }
     nav a:hover {
@@ -86,7 +88,7 @@
     .hero p {
       color: var(--muted);
       font-size: 1.15rem;
-      max-width: 720px;
+      max-width: 760px;
       margin-bottom: 2rem;
     }
     .hero-cta {
@@ -101,7 +103,7 @@
       font-weight: 600;
       text-decoration: none;
       transition: all 0.2s ease;
-      font-size: 0.95rem;
+      font-size: 0.92rem;
     }
     .btn-primary {
       background: var(--accent);
@@ -120,7 +122,7 @@
     }
     section {
       max-width: 1100px;
-      margin: 5rem auto;
+      margin: 5.5rem auto;
       padding: 0 1.5rem;
     }
     h2.section-title {
@@ -255,20 +257,53 @@
       font-size: 0.9rem;
       color: var(--muted);
     }
-    .img-placeholder {
-      background: #111a2e;
-      border: 2px dashed var(--border);
+    .img-container {
+      background: #0f172a;
+      border: 1px solid var(--border);
       border-radius: 8px;
-      padding: 2.5rem 1.5rem;
+      padding: 1rem;
       text-align: center;
       margin-top: 1rem;
       margin-bottom: 1.5rem;
+    }
+    .img-container img {
+      width: 100%;
+      height: auto;
+      border-radius: 6px;
+      display: block;
     }
     .tableau-btn-group {
       display: flex;
       gap: 0.75rem;
       margin-top: 1rem;
       flex-wrap: wrap;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.9rem;
+      text-align: left;
+    }
+    th, td {
+      padding: 10px;
+    }
+    th {
+      border-bottom: 2px solid var(--border);
+      color: var(--muted);
+    }
+    td {
+      border-bottom: 1px solid var(--border);
+    }
+    pre {
+      background: #090d16;
+      border: 1px solid var(--border);
+      padding: 12px 16px;
+      border-radius: 6px;
+      font-family: monospace;
+      font-size: 0.88rem;
+      color: var(--accent);
+      overflow-x: auto;
+      margin: 12px 0;
     }
     footer {
       border-top: 1px solid var(--border);
@@ -289,8 +324,9 @@
         <a href="#about">About</a>
         <a href="#skills">Skills</a>
         <a href="#projects">Projects</a>
-        <a href="#case-study-bellabeat">Bellabeat Analysis</a>
-        <a href="#case-study-ab">A/B Testing</a>
+        <a href="#case-study-bellabeat">01. Bellabeat</a>
+        <a href="#case-study-ecommerce">02. Support Analytics</a>
+        <a href="#case-study-ab">03. A/B Growth Test</a>
         <a href="#certifications">Certifications</a>
         <a href="#contact">Contact</a>
       </nav>
@@ -303,11 +339,11 @@
       <span class="badge">Available for Product Marketing & BI Opportunities</span>
       <h1>Bridging Marketing Strategy with Analytics & BI</h1>
       <p>
-        I'm Ifeoma Chuks, a Product Marketing Data Analyst with 7+ years of experience transforming multi-channel funnels, retention cohorts, and behavioral telemetry into measurable enterprise growth. Certified in Google Business Intelligence and Google Data Analytics.
+        I'm Ifeoma Chuks, a Product Marketing Data Analyst with 7+ years of experience transforming multi-channel funnels, customer support telemetry, and product behavior into revenue-driving decisions. Certified in Business Intelligence and Data Analytics.
       </p>
       <div class="hero-cta">
         <a href="#about" class="btn btn-primary">About My Approach</a>
-        <a href="#projects" class="btn btn-secondary">Explore Projects</a>
+        <a href="https://www.linkedin.com/in/ifeomachuks/" target="_blank" class="btn btn-secondary">Connect on LinkedIn</a>
       </div>
     </div>
 
@@ -316,16 +352,34 @@
       <h2 class="section-title">About Me</h2>
       <div class="about-card">
         <p>
-          I spent seven years in marketing learning how to make people pay attention to words, only to discover that I was just as curious about the numbers people left behind. A campaign would end, the report would say engagement increased by 32%, and while everyone else was ready for the next thing, I still wanted to know: <em>why?</em>
+          I spent seven years in marketing learning how to make people pay attention to words, only to realise I was becoming increasingly curious about the numbers people left behind.
         </p>
         <p>
-          That curiosity eventually pulled me deeper into data analytics, where I now use Excel, spreadsheets and SQL to clean messy data, find patterns and turn rows of numbers into information people can actually use.
+          A campaign would end. The report would say engagement increased by 32%. Everyone would celebrate, close the report and move on to the next campaign.
         </p>
         <p>
-          I haven't left my marketing brain behind, and I don't intend to. I understand audiences, business questions and the human behaviour hiding behind clicks, conversions and percentages. I'm simply learning to investigate those stories with better evidence.
+          Meanwhile, I’d still be staring at the 32%.
+        </p>
+        <p>
+          Why did it increase? Who responded? What changed? Was it the message, the audience, the timing—or something we hadn’t even considered?
+        </p>
+        <p>
+          That curiosity is what pulled me into data analytics.
+        </p>
+        <p>
+          Today, I use Excel, Google Sheets and SQL to clean data, investigate patterns and answer business questions. But I haven’t left my marketing brain behind, and I don’t intend to. Seven years of thinking about audiences taught me that there is usually a person behind every click, conversion and percentage—and context behind every number.
+        </p>
+        <p>
+          So when I look at a dataset, I’m not interested in producing a pretty chart and calling it a day. I want to know what happened, why it happened, what we can reasonably learn from it and, most importantly, what someone should do with that information.
+        </p>
+        <p>
+          Maybe that’s the marketer in me. Maybe that’s the analyst.
+        </p>
+        <p>
+          I think it’s useful to be both.
         </p>
         <p style="color: var(--accent); font-weight: 500;">
-          I like numbers, but I love what they mean—and I'm happiest somewhere between the spreadsheet and the sentence that finally makes it all make sense.
+          I like numbers, but I love what they mean—and I’m happiest somewhere between the spreadsheet and the sentence that finally makes it all make sense.
         </p>
       </div>
     </section>
@@ -335,12 +389,12 @@
       <h2 class="section-title">Technical Competencies</h2>
       <div class="skills-grid">
         <div class="skill-card">
-          <h3>Business Intelligence</h3>
+          <h3>Business Intelligence & Viz</h3>
           <ul>
             <li>Tableau & Looker Studio</li>
-            <li>Interactive BI Dashboards</li>
-            <li>Data Modeling & ETL Pipelines</li>
-            <li>Executive KPI Scorecards</li>
+            <li>Interactive Dashboard Modeling</li>
+            <li>ETL Concepts & Pipelines</li>
+            <li>Executive Scorecards & KPIs</li>
           </ul>
         </div>
         <div class="skill-card">
@@ -349,24 +403,24 @@
             <li>SQL (BigQuery, PostgreSQL)</li>
             <li>R Programming</li>
             <li>Exploratory Data Analysis (EDA)</li>
-            <li>Data Cleaning & Sensitivity Auditing</li>
+            <li>Data Cleaning Sensitivity Audits</li>
           </ul>
         </div>
         <div class="skill-card">
-          <h3>Spreadsheets & Modeling</h3>
+          <h3>Advanced Spreadsheets</h3>
           <ul>
-            <li>INDEX/MATCH & XLOOKUP</li>
-            <li>Dynamic Arrays & Nested Logic</li>
-            <li>Pivot Tables & Variance Analysis</li>
-            <li>Data Hygiene Governance</li>
+            <li>Exact VLOOKUP & XLOOKUP</li>
+            <li>Nested Logic & Dynamic Arrays</li>
+            <li>Pivot Tables & Variance Reporting</li>
+            <li>Data Hygiene & Standardization</li>
           </ul>
         </div>
         <div class="skill-card">
           <h3>Product Marketing Analytics</h3>
           <ul>
-            <li>Behavioral User Segmentation</li>
+            <li>Behavioral Customer Segmentation</li>
             <li>A/B Testing & Statistical Inference</li>
-            <li>In-App Engagement Diagnostics</li>
+            <li>SLA Compliance & CSAT Modeling</li>
             <li>Trial-to-Paid & ARR Forecasting</li>
           </ul>
         </div>
@@ -380,314 +434,295 @@
         <!-- Project 1: Bellabeat -->
         <div class="project-card">
           <div>
-            <h3>Bellabeat Smart-Device Behavioral Analysis</h3>
+            <h3>01. Bellabeat Smart-Device Telemetry Analysis</h3>
             <p style="color: var(--muted); font-size: 0.95rem; margin-top: 0.5rem;">
-              Analyzed wearable telemetry using BigQuery and Tableau. Developed quality sensitivity audits, an Activity &times; Tracking matrix, and retention product hypotheses.
+              Audited wearable tracker data in BigQuery and modeled an Activity &times; Tracking matrix in Tableau to formulate segmented retention and app engagement strategies.
             </p>
             <div class="project-tags">
               <span class="tag">SQL (BigQuery)</span>
               <span class="tag">Tableau</span>
               <span class="tag">Behavioral Segmentation</span>
-              <span class="tag">Sensitivity Analysis</span>
+              <span class="tag">Data Sensitivity</span>
             </div>
           </div>
           <a href="#case-study-bellabeat" class="project-link">Read Full Case Study &darr;</a>
         </div>
 
-        <!-- Project 2: A/B Testing -->
+        <!-- Project 2: E-commerce Support -->
         <div class="project-card">
           <div>
-            <h3>In-App Onboarding A/B Test & Growth Model</h3>
+            <h3>02. E-Commerce Support Ticket & SLA Analysis</h3>
             <p style="color: var(--muted); font-size: 0.95rem; margin-top: 0.5rem;">
-              A controlled experiment (N=10,000) comparing a modal walkthrough against an interactive setup checklist, driving a +23.95% activation lift and +$136.5K ARR.
+              Analyzed 2,990 customer support tickets using Google Sheets to uncover root-cause friction, channel latency, and SLA bottlenecks impacting customer satisfaction.
+            </p>
+            <div class="project-tags">
+              <span class="tag">Google Sheets</span>
+              <span class="tag">VLOOKUP</span>
+              <span class="tag">Pivot Tables</span>
+              <span class="tag">CSAT Optimization</span>
+            </div>
+          </div>
+          <a href="#case-study-ecommerce" class="project-link">Read Support Study &darr;</a>
+        </div>
+
+        <!-- Project 3: A/B Testing -->
+        <div class="project-card">
+          <div>
+            <h3>03. In-App Onboarding A/B Test & Growth Model</h3>
+            <p style="color: var(--muted); font-size: 0.95rem; margin-top: 0.5rem;">
+              Evaluated an interactive quick-start checklist against a legacy modal tour across 10,000 users, delivering a +23.95% setup activation lift and +$136.5K ARR run-rate.
             </p>
             <div class="project-tags">
               <span class="tag">A/B Testing</span>
-              <span class="tag">Spreadsheet Modeling</span>
-              <span class="tag">Hypothesis Testing</span>
+              <span class="tag">Statistical Z-Test</span>
+              <span class="tag">Cohort Conversion</span>
               <span class="tag">ARR Optimization</span>
             </div>
           </div>
-          <a href="#case-study-ab" class="project-link">Read Experiment Analysis &darr;</a>
-        </div>
-
-        <!-- Project 3: SaaS Funnel & ARR -->
-        <div class="project-card">
-          <div>
-            <h3>SaaS Acquisition Funnel & ARR Cohort Dashboard</h3>
-            <p style="color: var(--muted); font-size: 0.95rem; margin-top: 0.5rem;">
-              Developed an interactive Tableau dashboard modeling regional drop-offs across EMEA and African markets, pinpointing conversion barriers that contributed to a 35% ARR lift.
-            </p>
-            <div class="project-tags">
-              <span class="tag">Tableau</span>
-              <span class="tag">BigQuery</span>
-              <span class="tag">Cohort Retention</span>
-              <span class="tag">Pipeline Metrics</span>
-            </div>
-          </div>
-          <a href="#" class="project-link">Explore Tableau Dashboard &rarr;</a>
+          <a href="#case-study-ab" class="project-link">Read Growth Experiment &darr;</a>
         </div>
       </div>
     </section>
 
-    <!-- CASE STUDY 1: BELLABEAT SMART-DEVICE USAGE ANALYSIS -->
+    <!-- ========================================== -->
+    <!-- CASE STUDY 1: BELLABEAT SMART-DEVICE TELEMETRY -->
+    <!-- ========================================== -->
     <section id="case-study-bellabeat">
-      <span class="badge">Product Marketing & Behavioral Analytics</span>
+      <span class="badge">Case Study 01 · Behavioral Telemetry</span>
       <h2 style="font-size: 2.2rem; margin-top: 0.5rem; margin-bottom: 0.5rem; color: var(--text);">
         Bellabeat Smart-Device Usage Analysis
       </h2>
       <h4 style="color: var(--accent); font-weight: 500; font-size: 1.15rem; margin-bottom: 1.5rem;">
-        Turning Wearable Telemetry into Actionable Product Marketing Insights
+        Turning Wearable-Device Behavior into Actionable Product Marketing Insights
       </h4>
 
       <div style="background: var(--card-bg); border: 1px solid var(--border); border-radius: 8px; padding: 1.25rem; margin-bottom: 2.5rem; display: flex; flex-wrap: wrap; gap: 1.5rem; font-size: 0.9rem;">
         <div><strong style="color: var(--text);">Tools:</strong> <span style="color: var(--muted);">BigQuery SQL, Tableau, Spreadsheets, Exploratory Analysis</span></div>
-        <div><strong style="color: var(--text);">Dataset:</strong> <span style="color: var(--muted);">Fitbit Fitness Tracker Telemetry (33 Users, 940 Daily Obs.)</span></div>
+        <div><strong style="color: var(--text);">Dataset:</strong> <span style="color: var(--muted);">Fitbit Telemetry (33 Users, 940 Daily Observations)</span></div>
         <div><strong style="color: var(--text);">Role:</strong> <span style="color: var(--muted);">Product Marketing Data Analyst</span></div>
         <div><strong style="color: var(--text);">Framework:</strong> <span style="color: var(--muted);">Ask &rarr; Prepare &rarr; Process &rarr; Analyze &rarr; Share &rarr; Act</span></div>
       </div>
 
-      <!-- SECTION 01 & 02 -->
+      <!-- OBJECTIVE & DATA PREP -->
       <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem; margin-bottom: 2rem;">
         <div style="background: var(--card-bg); border: 1px solid var(--border); border-radius: 8px; padding: 1.5rem;">
-          <h3 style="font-size: 1.2rem; color: var(--accent); margin-bottom: 0.75rem;">01. Business Objective</h3>
+          <h3 style="font-size: 1.2rem; color: var(--accent); margin-bottom: 0.75rem;">01. Business Task</h3>
           <p style="color: var(--muted); font-size: 0.93rem;">
-            Bellabeat products combine smart wellness tracking with a specialized focus on women’s health. The goal was not simply calculating average steps, but examining consumer usage patterns to identify meaningful behavioral segments that inform Bellabeat’s app marketing, personalized reminders, and feature engagement strategy.
+            Bellabeat manufactures high-end wellness trackers tailored for women. The objective was not merely calculating average step counts, but analyzing customer engagement telemetry to determine how consumers track activity, identify behavioral friction, and translate those findings into personalized in-app marketing campaigns.
           </p>
         </div>
         <div style="background: var(--card-bg); border: 1px solid var(--border); border-radius: 8px; padding: 1.5rem;">
-          <h3 style="font-size: 1.2rem; color: var(--accent); margin-bottom: 0.75rem;">02. Data Audit & Processing</h3>
+          <h3 style="font-size: 1.2rem; color: var(--accent); margin-bottom: 0.75rem;">02. Data Processing in BigQuery</h3>
           <p style="color: var(--muted); font-size: 0.93rem;">
-            Audited daily tracking records from April 12 &ndash; May 12, 2016. Joined <code style="color: var(--accent);">Daily Steps</code> (940 rows, 33 users) and <code style="color: var(--accent);">Daily Intensities</code> (940 rows, 33 users) in Google BigQuery using unique ID and ActivityDay, engineering active ratios and quality flags.
+            Joined daily steps and intensity tables (940 observations across 33 participants) in Google BigQuery. Computed user-level aggregate baselines (mean, median, observation coverage %, sedentary minutes) so participants with 31 days would not disproportionately skew comparisons.
           </p>
         </div>
       </div>
 
-      <!-- SECTION 03 & 04: DATA CLEANING SENSITIVITY AUDIT -->
+      <!-- SENSITIVITY AUDIT TABLE -->
       <div style="background: var(--card-bg); border: 1px solid var(--border); border-radius: 8px; padding: 1.5rem; margin-bottom: 2.5rem;">
-        <h3 style="font-size: 1.25rem; color: var(--text); margin-bottom: 0.5rem;">03 & 04. Data Quality Sensitivity Analysis: Does Cleaning Matter?</h3>
+        <h3 style="font-size: 1.25rem; color: var(--text); margin-bottom: 0.5rem;">03 & 04. Data Cleaning Sensitivity Audit</h3>
         <p style="color: var(--muted); font-size: 0.92rem; margin-bottom: 1.2rem;">
-          The daily dataset contained 77 zero-step records. Rather than arbitrarily deleting records, an analytical rule identified <strong>Possible Non-Wear</strong> records where <code style="color: var(--accent);">total_steps = 0 AND total_active_minutes = 0 AND sedentary_minutes = 1440</code> (72 records). A sensitivity audit proved this decision materially changes behavioral baselines:
+          The daily dataset contained 77 zero-step records. Rather than arbitrarily deleting records, a conservative quality rule flagged <strong>Possible Non-Wear</strong> when <code style="color: var(--accent);">total_steps = 0 AND total_active_minutes = 0 AND sedentary_minutes = 1440</code> (72 records). A sensitivity test proved cleaning is part of the analytical result:
         </p>
         <div style="overflow-x: auto;">
-          <table style="width: 100%; border-collapse: collapse; font-size: 0.9rem; text-align: left;">
+          <table>
             <thead>
-              <tr style="border-bottom: 2px solid var(--border); color: var(--muted);">
-                <th style="padding: 8px;">Metric</th>
-                <th style="padding: 8px;">All Observations (940 Rows)</th>
-                <th style="padding: 8px;">Excluding Possible Non-Wear (868 Rows)</th>
-                <th style="padding: 8px;">Material Impact (% Delta)</th>
+              <tr>
+                <th>Metric</th>
+                <th>All Observations (940 Rows)</th>
+                <th>Excluding Possible Non-Wear (868 Rows)</th>
+                <th>Material Impact (% Delta)</th>
               </tr>
             </thead>
             <tbody>
-              <tr style="border-bottom: 1px solid var(--border);">
-                <td style="padding: 8px; font-weight: 600;">Average Daily Steps</td>
-                <td style="padding: 8px;">7,637.91</td>
-                <td style="padding: 8px; color: var(--accent); font-weight: 600;">8,271.47</td>
-                <td style="padding: 8px; color: var(--green);">+8.3% increase</td>
-              </tr>
-              <tr style="border-bottom: 1px solid var(--border);">
-                <td style="padding: 8px; font-weight: 600;">Average Active Minutes</td>
-                <td style="padding: 8px;">227.54 min</td>
-                <td style="padding: 8px; color: var(--accent); font-weight: 600;">246.42 min</td>
-                <td style="padding: 8px; color: var(--green);">+8.3% increase</td>
+              <tr>
+                <td style="font-weight: 600;">Average Daily Steps</td>
+                <td>7,637.91</td>
+                <td style="color: var(--accent); font-weight: 600;">8,271.47</td>
+                <td style="color: var(--green);">+8.3% increase</td>
               </tr>
               <tr>
-                <td style="padding: 8px; font-weight: 600;">Average Sedentary Minutes</td>
-                <td style="padding: 8px;">991.21 min (16.5 hrs)</td>
-                <td style="padding: 8px; color: var(--accent); font-weight: 600;">953.98 min (15.9 hrs)</td>
-                <td style="padding: 8px; color: var(--green);">-3.8% decrease</td>
+                <td style="font-weight: 600;">Average Active Minutes</td>
+                <td>227.54 min</td>
+                <td style="color: var(--accent); font-weight: 600;">246.42 min</td>
+                <td style="color: var(--green);">+8.3% increase</td>
+              </tr>
+              <tr>
+                <td style="font-weight: 600;">Average Sedentary Minutes</td>
+                <td>991.21 min (16.5 hrs)</td>
+                <td style="color: var(--accent); font-weight: 600;">953.98 min (15.9 hrs)</td>
+                <td style="color: var(--green);">-3.8% decrease</td>
               </tr>
             </tbody>
           </table>
         </div>
-        <p style="font-size: 0.85rem; color: var(--muted); margin-top: 0.75rem; font-style: italic;">
-          Methodological Takeaway: Data cleaning is part of the analytical result, not a cosmetic step before it. Unfiltered master tables were preserved for traceability while filtered data was utilized for behavioral segmentation.
-        </p>
       </div>
 
-      <!-- SECTION 06, 07, 08, 09: ANALYTICAL FINDINGS & CORRELATIONS -->
-      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem; margin-bottom: 2.5rem;">
-        <div style="background: var(--card-bg); border: 1px solid var(--border); border-radius: 8px; padding: 1.5rem;">
-          <h4 style="color: var(--accent); margin-bottom: 0.5rem;">User-Level Step Distribution</h4>
-          <p style="color: var(--muted); font-size: 0.9rem; margin-bottom: 0.75rem;">
-            Average daily steps ranged from <strong>1,578 &rarr; 16,040</strong> across the 33 users. Sample quartiles constructed relative behavioral tiers:
-          </p>
-          <ul style="color: var(--muted); font-size: 0.88rem; line-height: 1.6; padding-left: 1.2rem;">
-            <li><strong>Q1 (Lower):</strong> 5,566.87 steps/day</li>
-            <li><strong>Median:</strong> 7,555.77 steps/day (Mean: 7,886.42)</li>
-            <li><strong>Q3 (Upper):</strong> 9,684.17 steps/day</li>
-            <li><strong>Middle 50% Range:</strong> 5,567 &ndash; 9,684 steps/day</li>
-          </ul>
-        </div>
-
-        <div style="background: var(--card-bg); border: 1px solid var(--border); border-radius: 8px; padding: 1.5rem;">
-          <h4 style="color: var(--accent); margin-bottom: 0.5rem;">Behavioral Relationship Correlations</h4>
-          <p style="color: var(--muted); font-size: 0.9rem; margin-bottom: 0.75rem;">
-            Statistical correlations revealed critical disconnects between tracking and movement:
-          </p>
-          <ul style="color: var(--muted); font-size: 0.88rem; line-height: 1.6; padding-left: 1.2rem;">
-            <li><strong>Tracking Coverage &harr; Steps (r = 0.143):</strong> Weak positive linear relationship. Tracking frequently does not mean a user is physically active.</li>
-            <li><strong>Steps &harr; Sedentary Minutes (r = -0.258):</strong> Only weakly negative. Active users still accumulate high sedentary time.</li>
-            <li><strong>Steps &harr; Active Minutes (r = +0.675):</strong> Moderately strong positive linear relationship.</li>
-          </ul>
-        </div>
-      </div>
-
-      <!-- SECTION 10: TABLEAU VISUALIZATION (MATRIX) -->
+      <!-- TABLEAU VISUAL 1: SCATTERPLOT MATRIX -->
       <div style="background: var(--card-bg); border: 1px solid var(--border); border-radius: 8px; padding: 1.5rem; margin-bottom: 2.5rem;">
         <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem; margin-bottom: 0.5rem;">
           <h3 style="font-size: 1.25rem; color: var(--text);">Tableau Visual: Activity Level &times; Tracking Coverage Matrix</h3>
           <span class="tag">Tableau Portfolio Visual</span>
         </div>
         <p style="color: var(--muted); font-size: 0.92rem;">
-          Scatterplot mapping <strong>Observation Coverage (%)</strong> against <strong>Average Daily Steps</strong> across all 33 participants. Segmented by sample median activity (7,555.8 steps) and 90% tracking coverage threshold into four distinct personas:
+          Scatterplot mapping <strong>Observation Coverage (%)</strong> against <strong>Average Daily Steps</strong> across all 33 participants[cite: 6]. Segmented by sample median activity (7,555.8 steps) and 90% tracking coverage threshold[cite: 6]. Pearson correlation ($r = 0.143$) confirmed that tracking frequently does not necessarily mean higher physical activity.
         </p>
 
-        <div class="img-placeholder">
-          <img src="bellabeat-matrix.png" alt="Bellabeat Activity Level vs Tracking Coverage Matrix (Tableau)" style="max-width: 100%; height: auto; border-radius: 6px; display: none;" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';" />
-          <div style="color: var(--muted); font-size: 0.95rem;">
-            <p style="font-weight: 600; color: var(--accent); margin-bottom: 0.25rem;">[ Tableau Visual: Activity &times; Tracking Matrix Screenshot ]</p>
-            <p style="font-size: 0.85rem;">Export your Tableau scatterplot as <code>bellabeat-matrix.png</code> and add to GitHub repository root.</p>
-          </div>
+        <!-- Live Screenshot Display -->
+        <div class="img-container">
+          <img src="Activity vs Tracking Coverage.png" alt="Bellabeat Activity Level vs Tracking Coverage Scatterplot" onerror="this.src='bellabeat-matrix.png'" />
         </div>
 
         <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1rem; font-size: 0.85rem; color: var(--muted);">
-          <div style="border-left: 2px solid var(--accent); padding-left: 0.75rem;"><strong>1. High Activity + High Coverage:</strong> Product champions; candidates for advanced metrics and community leaderboards.</div>
-          <div style="border-left: 2px solid var(--border); padding-left: 0.75rem;"><strong>2. High Activity + Low Coverage:</strong> Self-motivated; need lightweight sync nudges rather than fitness coaching.</div>
-          <div style="border-left: 2px solid var(--border); padding-left: 0.75rem;"><strong>3. Low Activity + High Coverage:</strong> Highly engaged app users needing achievable baseline habit milestones.</div>
-          <div style="border-left: 2px solid #ef4444; padding-left: 0.75rem;"><strong>4. Low Activity + Low Coverage:</strong> At-risk churn cohort; requires onboarding re-engagement and habit formation.</div>
+          <div style="border-left: 2px solid var(--accent); padding-left: 0.75rem;"><strong>1. High Activity + High Coverage:</strong> Product power users; prime candidates for premium coaching tiers.</div>
+          <div style="border-left: 2px solid var(--border); padding-left: 0.75rem;"><strong>2. High Activity + Low Coverage:</strong> Naturally active; benefit from automated passive sync reminders.</div>
+          <div style="border-left: 2px solid var(--border); padding-left: 0.75rem;"><strong>3. Low Activity + High Coverage:</strong> Highly engaged app habit; requires micro-challenges and progressive goals.</div>
+          <div style="border-left: 2px solid var(--red); padding-left: 0.75rem;"><strong>4. Low Activity + Low Coverage:</strong> High-risk churn segment; requires immediate onboarding intervention.</div>
         </div>
 
         <div class="tableau-btn-group">
-          <a href="https://public.tableau.com" target="_blank" class="btn btn-primary" style="font-size: 0.85rem; padding: 0.5rem 1.2rem;">View on Tableau Public &rarr;</a>
-          <a href="#case-study-bellabeat" class="btn btn-secondary" style="font-size: 0.85rem; padding: 0.5rem 1.2rem;">Explore Interactive Matrix</a>
+          <a href="https://public.tableau.com/views/MoreStepsDontNecessarilyMeanMuchLessSitting/ActivityvsTrackingCoverage?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link" target="_blank" class="btn btn-primary" style="font-size: 0.85rem; padding: 0.5rem 1.2rem;">View on Tableau Public &rarr;</a>
         </div>
       </div>
 
-      <!-- SECTION 11: WEEKLY ACTIVITY ANALYSIS -->
+      <!-- TABLEAU VISUAL 2: WEEKDAY RHYTHM -->
       <div style="background: var(--card-bg); border: 1px solid var(--border); border-radius: 8px; padding: 1.5rem; margin-bottom: 2.5rem;">
-        <h3 style="font-size: 1.25rem; color: var(--text); margin-bottom: 0.5rem;">11. Weekly Activity Patterns: Averages Can Hide Typical Behavior</h3>
+        <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem; margin-bottom: 0.5rem;">
+          <h3 style="font-size: 1.25rem; color: var(--text);">Tableau Visual: Day-of-Week Mean vs. Median Comparison</h3>
+          <span class="tag">Tableau Portfolio Visual</span>
+        </div>
         <p style="color: var(--muted); font-size: 0.92rem; margin-bottom: 1.2rem;">
-          Comparing daily <strong>Mean Steps</strong> vs. <strong>Median Steps</strong> reveals where skewness distorts reality. While Tuesday shows uniformly high activity, Saturday averages are pulled up by extreme outliers:
+          Comparing daily <strong>Mean Steps</strong> vs. <strong>Median Steps</strong> reveals how outliers distort averages[cite: 5]. While Tuesday exhibited uniformly high activity (8,885 mean vs. 9,033 median), Saturday showed a massive <strong>1,455-step gap</strong> (8,791 mean vs. 7,336 median), indicating that high weekend averages were driven by a small minority of users.
         </p>
 
-        <div style="overflow-x: auto; margin-bottom: 1.5rem;">
-          <table style="width: 100%; border-collapse: collapse; font-size: 0.9rem; text-align: left;">
-            <thead>
-              <tr style="border-bottom: 2px solid var(--border); color: var(--muted);">
-                <th style="padding: 8px;">Day of Week</th>
-                <th style="padding: 8px;">Mean Steps</th>
-                <th style="padding: 8px;">Median Steps</th>
-                <th style="padding: 8px;">Gap (Mean - Median)</th>
-                <th style="padding: 8px;">Active Minutes</th>
-                <th style="padding: 8px;">Sedentary Minutes</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr style="border-bottom: 1px solid var(--border);">
-                <td style="padding: 8px;">Sunday</td>
-                <td style="padding: 8px;">7,627</td>
-                <td style="padding: 8px;">6,731</td>
-                <td style="padding: 8px; color: var(--muted);">+896</td>
-                <td style="padding: 8px;">229 min</td>
-                <td style="padding: 8px;">945 min</td>
-              </tr>
-              <tr style="border-bottom: 1px solid var(--border);">
-                <td style="padding: 8px;">Monday</td>
-                <td style="padding: 8px;">8,488</td>
-                <td style="padding: 8px;">8,232</td>
-                <td style="padding: 8px; color: var(--muted);">+256</td>
-                <td style="padding: 8px;">250 min</td>
-                <td style="padding: 8px;">990 min</td>
-              </tr>
-              <tr style="border-bottom: 1px solid var(--border); background: rgba(56, 189, 248, 0.05);">
-                <td style="padding: 8px; font-weight: 600; color: var(--accent);">Tuesday (Peak Typical)</td>
-                <td style="padding: 8px; font-weight: 600; color: var(--accent);">8,885</td>
-                <td style="padding: 8px; font-weight: 600; color: var(--accent);">9,033</td>
-                <td style="padding: 8px; color: var(--green);">-148 (Balanced)</td>
-                <td style="padding: 8px;">257 min</td>
-                <td style="padding: 8px;">967 min</td>
-              </tr>
-              <tr style="border-bottom: 1px solid var(--border);">
-                <td style="padding: 8px;">Wednesday</td>
-                <td style="padding: 8px;">8,158</td>
-                <td style="padding: 8px;">8,053</td>
-                <td style="padding: 8px; color: var(--muted);">+105</td>
-                <td style="padding: 8px;">241 min</td>
-                <td style="padding: 8px;">954 min</td>
-              </tr>
-              <tr style="border-bottom: 1px solid var(--border);">
-                <td style="padding: 8px;">Thursday</td>
-                <td style="padding: 8px;">8,064</td>
-                <td style="padding: 8px;">8,314</td>
-                <td style="padding: 8px; color: var(--muted);">-250</td>
-                <td style="padding: 8px;">236 min</td>
-                <td style="padding: 8px;">920 min</td>
-              </tr>
-              <tr style="border-bottom: 1px solid var(--border);">
-                <td style="padding: 8px;">Friday</td>
-                <td style="padding: 8px;">7,821</td>
-                <td style="padding: 8px;">7,795</td>
-                <td style="padding: 8px; color: var(--muted);">+26</td>
-                <td style="padding: 8px;">248 min</td>
-                <td style="padding: 8px;">978 min</td>
-              </tr>
-              <tr style="background: rgba(251, 191, 36, 0.05);">
-                <td style="padding: 8px; font-weight: 600; color: #fbbf24;">Saturday (Skewed Peak)</td>
-                <td style="padding: 8px; font-weight: 600; color: #fbbf24;">8,791</td>
-                <td style="padding: 8px; font-weight: 600; color: #fbbf24;">7,336</td>
-                <td style="padding: 8px; color: #fbbf24; font-weight: 600;">+1,455 gap</td>
-                <td style="padding: 8px;">263 min</td>
-                <td style="padding: 8px;">927 min</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-
-        <div class="img-placeholder">
-          <img src="bellabeat-weekday.png" alt="Bellabeat Day-of-Week Mean vs Median Analysis" style="max-width: 100%; height: auto; border-radius: 6px; display: none;" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';" />
-          <div style="color: var(--muted); font-size: 0.95rem;">
-            <p style="font-weight: 600; color: var(--accent); margin-bottom: 0.25rem;">[ Tableau Visual: Day-of-Week Mean vs. Median Comparison ]</p>
-            <p style="font-size: 0.85rem;">Export your dual-measure bar/line chart as <code>bellabeat-weekday.png</code> into the GitHub repository root.</p>
-          </div>
+        <!-- Live Screenshot Display -->
+        <div class="img-container">
+          <img src="Sheet 1.png" alt="Bellabeat Day-of-Week Mean vs Median Analysis" onerror="this.src='bellabeat-weekday.png'" />
         </div>
 
         <div class="tableau-btn-group">
-          <a href="https://public.tableau.com" target="_blank" class="btn btn-primary" style="font-size: 0.85rem; padding: 0.5rem 1.2rem;">Open Tableau Dashboard &rarr;</a>
+          <a href="https://public.tableau.com/views/WeeklyActivityRhythm/Sheet1?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link" target="_blank" class="btn btn-primary" style="font-size: 0.85rem; padding: 0.5rem 1.2rem;">View on Tableau Public &rarr;</a>
         </div>
       </div>
 
-      <!-- SECTION 13 & 14: STRATEGIC HYPOTHESES & LIMITATIONS -->
+      <!-- RECOMMENDATIONS & LIMITATIONS -->
       <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem;">
         <div style="background: var(--card-bg); border: 1px solid var(--border); border-radius: 8px; padding: 1.5rem;">
           <h4 style="color: var(--accent); font-size: 1.1rem; margin-bottom: 0.6rem;">Product Marketing Recommendations</h4>
           <ul style="color: var(--muted); font-size: 0.92rem; line-height: 1.6; padding-left: 1.2rem;">
-            <li style="margin-bottom: 0.6rem;"><strong style="color: var(--text);">Differentiate Sedentary vs. Movement Messaging:</strong> Because active minutes and sedentary time correlate weakly (r = -0.258), test periodic daytime inactivity breaks rather than pushing daily step goals on users who already complete workouts.</li>
-            <li style="margin-bottom: 0.6rem;"><strong style="color: var(--text);">Segmented In-App Campaigns:</strong> Users who track consistently but record low steps need micro-challenges and progressive habit rewards, rather than aggressive fitness targets.</li>
-            <li><strong style="color: var(--text);">Weekend Consistency Challenges:</strong> The 1,455-step gap between Saturday mean and median indicates high variance; test weekend consistency reminders on Friday afternoons.</li>
+            <li style="margin-bottom: 0.6rem;"><strong style="color: var(--text);">Separate Inactivity from Workout Reminders:</strong> Because steps and sedentary time correlate weakly ($r = -0.258$), prompt daytime posture breaks rather than generic step pushes.</li>
+            <li style="margin-bottom: 0.6rem;"><strong style="color: var(--text);">Segmented Micro-Goals:</strong> Target users who track frequently but record low steps with gradual 15-minute walking goals.</li>
+            <li><strong style="color: var(--text);">Friday Habit Nudges:</strong> Mitigate the high Saturday variance by testing pre-weekend consistency reminders.</li>
           </ul>
         </div>
-
         <div style="background: var(--card-bg); border: 1px solid var(--border); border-radius: 8px; padding: 1.5rem;">
-          <h4 style="color: #fbbf24; font-size: 1.1rem; margin-bottom: 0.6rem;">Methodological Constraints & Limitations</h4>
+          <h4 style="color: var(--amber); font-size: 1.1rem; margin-bottom: 0.6rem;">Methodological Constraints</h4>
           <ul style="color: var(--muted); font-size: 0.92rem; line-height: 1.6; padding-left: 1.2rem;">
-            <li style="margin-bottom: 0.6rem;"><strong style="color: var(--text);">Small Sample Size:</strong> 33 total participants over a 1-month window (2016). Results represent directional behavioral hypotheses, not population-level conclusions.</li>
-            <li style="margin-bottom: 0.6rem;"><strong style="color: var(--text);">Demographic Blindspots:</strong> Dataset lacks gender, age, and lifestyle indicators; cannot verify whether participants mirror Bellabeat’s female-focused target market.</li>
-            <li><strong style="color: var(--text);">Correlation vs. Causation:</strong> Observable relationships describe associations within the sample, requiring experimental A/B validation before full GTM rollout.</li>
+            <li style="margin-bottom: 0.6rem;"><strong style="color: var(--text);">Sample Constraints:</strong> 33 participants across a 30-day window (2016); directional hypotheses rather than population-wide baselines.</li>
+            <li style="margin-bottom: 0.6rem;"><strong style="color: var(--text);">Demographic Blindspots:</strong> Lacks demographic segmentation to prove participants represent Bellabeat’s female customer base.</li>
+            <li><strong style="color: var(--text);">Correlation &ne; Causation:</strong> Observable relationships describe historical associations requiring controlled A/B testing before feature release.</li>
           </ul>
         </div>
       </div>
     </section>
 
-    <!-- CASE STUDY 2: A/B TESTING & ONBOARDING OPTIMIZATION -->
-    <section id="case-study-ab">
-      <span class="badge">Growth Experiment Deep Dive</span>
-      <h2 style="font-size: 2.2rem; margin-top: 0.5rem; margin-bottom: 1rem; color: var(--text);">
-        Optimizing In-App Onboarding to Accelerate User Activation & ARR
+    <!-- ========================================== -->
+    <!-- CASE STUDY 2: E-COMMERCE SUPPORT ANALYTICS -->
+    <!-- ========================================== -->
+    <section id="case-study-ecommerce">
+      <span class="badge">Case Study 02 · Customer Experience & Operations</span>
+      <h2 style="font-size: 2.2rem; margin-top: 0.5rem; margin-bottom: 0.5rem; color: var(--text);">
+        E-Commerce Customer Support Ticket Analysis
       </h2>
-      <p style="color: var(--muted); font-size: 1.05rem; max-width: 800px; margin-bottom: 2.5rem;">
-        A controlled 14-day growth experiment (N = 10,000) evaluating whether replacing a static 4-slide feature modal tour (Control) with an interactive, role-tailored setup checklist (Challenger Variant) accelerates user time-to-value and downstream paid conversions.
+      <h4 style="color: var(--accent); font-weight: 500; font-size: 1.15rem; margin-bottom: 1.5rem;">
+        Diagnosing Channel Bottlenecks, SLA Deficits, and Post-Purchase Friction
+      </h4>
+
+      <div style="background: var(--card-bg); border: 1px solid var(--border); border-radius: 8px; padding: 1.25rem; margin-bottom: 2.5rem; display: flex; flex-wrap: wrap; gap: 1.5rem; font-size: 0.9rem;">
+        <div><strong style="color: var(--text);">Tools:</strong> <span style="color: var(--muted);">Google Sheets, Exact VLOOKUP, Pivot Tables, Data Validation</span>[cite: 4]</div>
+        <div><strong style="color: var(--text);">Dataset:</strong> <span style="color: var(--muted);">2,990 Unique Customer Support Tickets & Relational Orders Table</span>[cite: 4]</div>
+        <div><strong style="color: var(--text);">Role:</strong> <span style="color: var(--muted);">Customer Support Operations & Marketing Analyst</span></div>
+      </div>
+
+      <!-- 4 KPIS -->
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1.25rem; margin-bottom: 2.5rem;">
+        <div style="background: var(--card-bg); border: 1px solid var(--border); border-radius: 8px; padding: 1.25rem;">
+          <div style="font-size: 0.85rem; color: var(--muted); text-transform: uppercase; letter-spacing: 0.5px;">Analyzed Tickets</div>
+          <div style="font-size: 1.8rem; font-weight: 700; color: var(--accent); margin: 0.35rem 0;">2,990</div>
+          <div style="font-size: 0.85rem; color: var(--muted);">2,865 Resolved · 125 Open</div>
+        </div>
+        <div style="background: var(--card-bg); border: 1px solid var(--border); border-radius: 8px; padding: 1.25rem;">
+          <div style="font-size: 0.85rem; color: var(--muted); text-transform: uppercase; letter-spacing: 0.5px;">Avg Resolution Time</div>
+          <div style="font-size: 1.8rem; font-weight: 700; color: var(--accent); margin: 0.35rem 0;">20.8 hrs</div>
+          <div style="font-size: 0.85rem; color: var(--muted);">Across all product tiers</div>
+        </div>
+        <div style="background: var(--card-bg); border: 1px solid var(--border); border-radius: 8px; padding: 1.25rem;">
+          <div style="font-size: 0.85rem; color: var(--muted); text-transform: uppercase; letter-spacing: 0.5px;">SLA Miss Rate</div>
+          <div style="font-size: 1.8rem; font-weight: 700; color: var(--red); margin: 0.35rem 0;">48.1%</div>
+          <div style="font-size: 0.85rem; color: var(--red);">On completed support cases</div>
+        </div>
+        <div style="background: var(--card-bg); border: 1px solid var(--border); border-radius: 8px; padding: 1.25rem;">
+          <div style="font-size: 0.85rem; color: var(--muted); text-transform: uppercase; letter-spacing: 0.5px;">Average CSAT Score</div>
+          <div style="font-size: 1.8rem; font-weight: 700; color: var(--green); margin: 0.35rem 0;">3.46 / 5.0</div>
+          <div style="font-size: 0.85rem; color: var(--muted);">Customer satisfaction benchmark</div>
+        </div>
+      </div>
+
+      <!-- WORKFLOW & DATA MODELING -->
+      <div style="background: var(--card-bg); border: 1px solid var(--border); border-radius: 8px; padding: 1.5rem; margin-bottom: 2.5rem;">
+        <h3 style="font-size: 1.2rem; color: var(--accent); margin-bottom: 0.75rem;">Data Preparation & Google Sheets Formulas</h3>
+        <p style="color: var(--muted); font-size: 0.93rem; margin-bottom: 0.75rem;">
+          Deduplicated 10 raw rows, normalized mixed-case issue strings using <code style="color: var(--accent);">=PROPER(TRIM())</code>, and verified timestamp formats[cite: 4]. Enriched individual ticket records by pulling transaction metadata from the separate Orders table via exact-match VLOOKUP[cite: 4]:
+        </p>
+        <pre>=IF($B2="","",VLOOKUP($B2, Orders!$A$2:$L$2401, 8, FALSE))</pre>
+        <p style="color: var(--muted); font-size: 0.9rem;">
+          Resolution duration was engineered as <code style="color: var(--accent);">(resolved_at - created_at) * 24</code>[cite: 4]. SLA benchmarks were dynamically assigned by priority tier (Urgent: 4h, High: 12h, Normal: 24h, Low: 48h) to evaluate breach rates against operational targets[cite: 4].
+        </p>
+      </div>
+
+      <!-- KEY FINDINGS BREAKDOWN -->
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem; margin-bottom: 2.5rem;">
+        <div style="background: var(--card-bg); border: 1px solid var(--border); border-radius: 8px; padding: 1.5rem;">
+          <h4 style="color: var(--accent); font-size: 1.05rem; margin-bottom: 0.5rem;">1. Post-Purchase Fulfillment Burden</h4>
+          <p style="color: var(--muted); font-size: 0.92rem; line-height: 1.6;">
+            <strong>Delivery Delays (1,211 tickets; 40.5%)</strong> and <strong>Damaged Items (467 tickets; 15.6%)</strong> generated over 56% of total inbound volume[cite: 4]. Post-purchase friction consumed customer support capacity, rather than pre-sale discovery questions[cite: 4].
+          </p>
+        </div>
+
+        <div style="background: var(--card-bg); border: 1px solid var(--border); border-radius: 8px; padding: 1.5rem;">
+          <h4 style="color: var(--accent); font-size: 1.05rem; margin-bottom: 0.5rem;">2. Channel Efficiency & CSAT Divergence</h4>
+          <p style="color: var(--muted); font-size: 0.92rem; line-height: 1.6;">
+            <strong>Email</strong> proved to be the slowest channel (111 min first response; 25.8h resolution)[cite: 4]. Conversely, <strong>Live Chat</strong> achieved the fastest resolution (15.5h) and highest satisfaction score (3.66/5.0)[cite: 4], proving synchronous resolution preserves customer retention.
+          </p>
+        </div>
+      </div>
+
+      <!-- OPERATIONAL RECOMMENDATIONS -->
+      <div style="background: var(--card-bg); border: 1px solid var(--border); border-radius: 8px; padding: 1.5rem;">
+        <h3 style="font-size: 1.2rem; color: var(--text); margin-bottom: 0.75rem;">Support Strategy & Retention Interventions</h3>
+        <ul style="color: var(--muted); font-size: 0.92rem; line-height: 1.6; padding-left: 1.2rem;">
+          <li style="margin-bottom: 0.5rem;"><strong style="color: var(--text);">Automated Self-Service Tracking:</strong> Deploy proactive SMS order tracking updates to deflect up to 30% of "Where is my order?" delivery delay tickets.</li>
+          <li style="margin-bottom: 0.5rem;"><strong style="color: var(--text);">Channel Routing & Reallocation:</strong> Route high-urgency refund requests away from email queues toward Live Chat to reduce resolution latency.</li>
+          <li><strong style="color: var(--text);">Packaging Quality Review:</strong> High return volumes in fragile categories require vendor packaging audits to reduce damaged item claims at the source.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ========================================== -->
+    <!-- CASE STUDY 3: A/B TESTING & ONBOARDING -->
+    <!-- ========================================== -->
+    <section id="case-study-ab">
+      <span class="badge">Case Study 03 · Growth Experiment Deep Dive</span>
+      <h2 style="font-size: 2.2rem; margin-top: 0.5rem; margin-bottom: 0.5rem; color: var(--text);">
+        Optimizing In-App Onboarding to Accelerate Activation & ARR
+      </h2>
+      <h4 style="color: var(--accent); font-weight: 500; font-size: 1.15rem; margin-bottom: 1.5rem;">
+        Evaluating Behavioral Setup Checklists vs. Static Modal Tours Across 10,000 Users
+      </h4>
+
+      <p style="color: var(--muted); font-size: 1.05rem; max-width: 820px; margin-bottom: 2.5rem;">
+        A randomized 14-day controlled growth experiment ($N = 10,000$) testing whether replacing a passive 4-slide carousel (Control) with an interactive, role-tailored quick-start checklist (Challenger Variant) accelerates product time-to-value and downstream ARR conversion.
       </p>
 
       <!-- KPI CARDS -->
@@ -695,12 +730,12 @@
         <div style="background: var(--card-bg); border: 1px solid var(--border); border-radius: 8px; padding: 1.25rem;">
           <div style="font-size: 0.85rem; color: var(--muted); text-transform: uppercase; letter-spacing: 0.5px;">Setup Activation Lift</div>
           <div style="font-size: 1.8rem; font-weight: 700; color: var(--accent); margin: 0.35rem 0;">+23.95%</div>
-          <div style="font-size: 0.85rem; color: var(--green);">Statistically Significant (p &lt; 0.001)</div>
+          <div style="font-size: 0.85rem; color: var(--green);">Statistically Significant ($p < 0.001$)</div>
         </div>
         <div style="background: var(--card-bg); border: 1px solid var(--border); border-radius: 8px; padding: 1.25rem;">
           <div style="font-size: 0.85rem; color: var(--muted); text-transform: uppercase; letter-spacing: 0.5px;">Trial-to-Paid Lift</div>
           <div style="font-size: 1.8rem; font-weight: 700; color: var(--accent); margin: 0.35rem 0;">+31.09%</div>
-          <div style="font-size: 0.85rem; color: var(--green);">18.17% &rarr; 23.82% Conversion</div>
+          <div style="font-size: 0.85rem; color: var(--green);">18.17% &rarr; 23.82% Upgrades</div>
         </div>
         <div style="background: var(--card-bg); border: 1px solid var(--border); border-radius: 8px; padding: 1.25rem;">
           <div style="font-size: 0.85rem; color: var(--muted); text-transform: uppercase; letter-spacing: 0.5px;">Incremental MRR</div>
@@ -716,75 +751,92 @@
 
       <!-- SCORECARD TABLE -->
       <div style="background: var(--card-bg); border: 1px solid var(--border); border-radius: 8px; padding: 1.5rem; margin-bottom: 2.5rem; overflow-x: auto;">
-        <h3 style="font-size: 1.2rem; margin-bottom: 1rem; color: var(--text);">Experiment Scorecard & Funnel Progression</h3>
-        <table style="width: 100%; border-collapse: collapse; font-size: 0.92rem; text-align: left;">
+        <h3 style="font-size: 1.2rem; margin-bottom: 1rem; color: var(--text);">Experiment Performance Scorecard</h3>
+        <table>
           <thead>
-            <tr style="border-bottom: 2px solid var(--border); color: var(--muted);">
-              <th style="padding: 10px;">Lifecycle Stage / Metric</th>
-              <th style="padding: 10px;">Control (Version A)</th>
-              <th style="padding: 10px;">Challenger (Version B)</th>
-              <th style="padding: 10px;">Delta (Absolute)</th>
-              <th style="padding: 10px;">Relative Lift</th>
-              <th style="padding: 10px;">Confidence</th>
+            <tr>
+              <th>Lifecycle Stage / Metric</th>
+              <th>Control (Version A)</th>
+              <th>Challenger (Version B)</th>
+              <th>Delta (Absolute)</th>
+              <th>Relative Lift</th>
+              <th>Confidence Level</th>
             </tr>
           </thead>
           <tbody>
-            <tr style="border-bottom: 1px solid var(--border);">
-              <td style="padding: 10px; font-weight: 600;">Exposed Unique Visitors</td>
-              <td style="padding: 10px;">4,923</td>
-              <td style="padding: 10px;">5,077</td>
-              <td style="padding: 10px;">+154</td>
-              <td style="padding: 10px;">—</td>
-              <td style="padding: 10px; color: var(--muted);">50/50 Traffic Split</td>
-            </tr>
-            <tr style="border-bottom: 1px solid var(--border);">
-              <td style="padding: 10px; font-weight: 600;">Onboarding Completed (Activation)</td>
-              <td style="padding: 10px;">611 (12.41%)</td>
-              <td style="padding: 10px;">781 (15.38%)</td>
-              <td style="padding: 10px;">+170 users (+2.97%)</td>
-              <td style="padding: 10px; color: var(--green); font-weight: 600;">+23.95%</td>
-              <td style="padding: 10px; color: var(--green);">99.9% (z = 4.29)</td>
-            </tr>
-            <tr style="border-bottom: 1px solid var(--border);">
-              <td style="padding: 10px; font-weight: 600;">Paid Customer Upgrades</td>
-              <td style="padding: 10px;">111 (2.25%)</td>
-              <td style="padding: 10px;">186 (3.66%)</td>
-              <td style="padding: 10px;">+75 paid (+1.41%)</td>
-              <td style="padding: 10px; color: var(--green); font-weight: 600;">+62.48% (Overall)</td>
-              <td style="padding: 10px; color: var(--green);">99.9% (z = 4.15)</td>
-            </tr>
-            <tr style="border-bottom: 1px solid var(--border);">
-              <td style="padding: 10px; font-weight: 600;">Trial-to-Paid Efficiency</td>
-              <td style="padding: 10px;">18.17%</td>
-              <td style="padding: 10px;">23.82%</td>
-              <td style="padding: 10px;">+5.65%</td>
-              <td style="padding: 10px; color: var(--green); font-weight: 600;">+31.09%</td>
-              <td style="padding: 10px; color: var(--green);">High Quality Retention</td>
+            <tr>
+              <td style="font-weight: 600;">Exposed Unique Visitors</td>
+              <td>4,923</td>
+              <td>5,077</td>
+              <td>+154</td>
+              <td>—</td>
+              <td style="color: var(--muted);">Clean 50/50 Traffic Split</td>
             </tr>
             <tr>
-              <td style="padding: 10px; font-weight: 600;">Total MRR Captured</td>
-              <td style="padding: 10px;">$14,789</td>
-              <td style="padding: 10px;">$26,164</td>
-              <td style="padding: 10px;">+$11,375</td>
-              <td style="padding: 10px; color: var(--green); font-weight: 600;">+76.92%</td>
-              <td style="padding: 10px; color: var(--green);">Enterprise Tier Lift</td>
+              <td style="font-weight: 600;">Completed Activation</td>
+              <td>611 (12.41%)</td>
+              <td>781 (15.38%)</td>
+              <td>+170 users (+2.97%)</td>
+              <td style="color: var(--green); font-weight: 600;">+23.95%</td>
+              <td style="color: var(--green);">99.9% ($z = 4.29$)</td>
+            </tr>
+            <tr>
+              <td style="font-weight: 600;">Paid Customer Upgrades</td>
+              <td>111 (2.25%)</td>
+              <td>186 (3.66%)</td>
+              <td>+75 paid (+1.41%)</td>
+              <td style="color: var(--green); font-weight: 600;">+62.48% (Overall)</td>
+              <td style="color: var(--green);">99.9% ($z = 4.15$)</td>
+            </tr>
+            <tr>
+              <td style="font-weight: 600;">Trial-to-Paid Efficiency</td>
+              <td>18.17%</td>
+              <td>23.82%</td>
+              <td>+5.65%</td>
+              <td style="color: var(--green); font-weight: 600;">+31.09%</td>
+              <td style="color: var(--green);">Retained Deal Quality</td>
+            </tr>
+            <tr>
+              <td style="font-weight: 600;">Total MRR Captured</td>
+              <td>$14,789</td>
+              <td>$26,164</td>
+              <td>+$11,375</td>
+              <td style="color: var(--green); font-weight: 600;">+76.92%</td>
+              <td style="color: var(--green);">Higher Enterprise Mix</td>
             </tr>
           </tbody>
         </table>
       </div>
 
-      <!-- VISUAL BAR CHART IMAGE PLACEHOLDER -->
+      <!-- VISUAL BAR CHART EMBED -->
       <div style="background: var(--card-bg); border: 1px solid var(--border); border-radius: 8px; padding: 1.5rem; margin-bottom: 2.5rem;">
         <h3 style="font-size: 1.2rem; margin-bottom: 0.5rem; color: var(--text);">Funnel Comparison: Control vs. Challenger Variant</h3>
         <p style="color: var(--muted); font-size: 0.9rem; margin-bottom: 1.25rem;">
-          User volume progression across exposure, setup activation, and paid subscriptions across both cohorts (N = 10,000).
+          User progression across initial exposure, completed setup activation, and paid subscription conversions ($N = 10,000$).
         </p>
-        <div class="img-placeholder">
-          <img src="ab-test-chart.png" alt="A/B Test Cohort Comparison Bar Chart" style="max-width: 100%; height: auto; border-radius: 6px; display: none;" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';" />
-          <div style="color: var(--muted); font-size: 0.95rem;">
-            <p style="font-weight: 600; color: var(--accent); margin-bottom: 0.25rem;">[ A/B Test Funnel Bar Chart Image ]</p>
-            <p style="font-size: 0.85rem;">Place your downloaded chart image as <code>ab-test-chart.png</code> in your GitHub repository root.</p>
-          </div>
+        <div class="img-container" style="background: #ffffff; padding: 1.5rem;">
+          <img src="ab-test-chart.png" alt="A/B Test Cohort Comparison Bar Chart" style="max-height: 420px; object-fit: contain; margin: 0 auto;" />
+        </div>
+      </div>
+
+      <!-- OBSERVATIONS & RECOMMENDATIONS -->
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem;">
+        <div style="background: var(--card-bg); border: 1px solid var(--border); border-radius: 8px; padding: 1.5rem;">
+          <h4 style="color: var(--accent); font-size: 1.1rem; margin-bottom: 0.6rem;">Key Analytical Observations</h4>
+          <ul style="color: var(--muted); font-size: 0.93rem; line-height: 1.6; padding-left: 1.2rem;">
+            <li style="margin-bottom: 0.5rem;"><strong style="color: var(--text);">Slashed Blank-Slate Friction:</strong> Replacing a passive 4-slide tour with a role-based setup checklist lowered time-to-first-project from 28.4 to 6.2 minutes, unlocking immediate activation.</li>
+            <li style="margin-bottom: 0.5rem;"><strong style="color: var(--text);">No Quality Dilution:</strong> Paid upgrades grew by +62.5% without depressing ARPU ($5.15 vs. $3.00), demonstrating stronger user intent.</li>
+            <li><strong style="color: var(--text);">Device Parity:</strong> Desktop activation reached 15.04% and mobile reached 15.64%, proving the lightweight checklist avoided small-screen usability drops.</li>
+          </ul>
+        </div>
+
+        <div style="background: var(--card-bg); border: 1px solid var(--border); border-radius: 8px; padding: 1.5rem;">
+          <h4 style="color: var(--accent); font-size: 1.1rem; margin-bottom: 0.6rem;">GTM Rollout Recommendations</h4>
+          <ul style="color: var(--muted); font-size: 0.93rem; line-height: 1.6; padding-left: 1.2rem;">
+            <li style="margin-bottom: 0.5rem;"><strong style="color: var(--text);">100% Production Rollout:</strong> Fully decommission the legacy modal walkthrough across all signup channels to capture +$136.5K incremental ARR.</li>
+            <li style="margin-bottom: 0.5rem;"><strong style="color: var(--text);">Triggered Lifecycle Emails:</strong> Implement automated behavioral re-engagement emails for users who complete Step 1 but stall before Step 2 within 6 hours.</li>
+            <li><strong style="color: var(--text);">Mobile App Alignment:</strong> Maintain checklist parity across mobile apps to prevent cross-platform conversion leakage.</li>
+          </ul>
         </div>
       </div>
     </section>
@@ -796,22 +848,17 @@
         <div class="cert-card">
           <h3>Google Business Intelligence</h3>
           <div class="issuer">Google / Coursera</div>
-          <p>Data modeling, ETL concepts, interactive dashboard development, Tableau, and BigQuery.</p>
+          <p>Dashboard modeling, BigQuery SQL data pipelines, ETL concepts, Tableau development, and stakeholder metrics.</p>
         </div>
         <div class="cert-card">
           <h3>Google Data Analytics</h3>
           <div class="issuer">Google / Coursera</div>
-          <p>Data cleaning, SQL querying, R programming, EDA, and data-driven storytelling.</p>
-        </div>
-        <div class="cert-card">
-          <h3>Google Cybersecurity</h3>
-          <div class="issuer">Google / Coursera</div>
-          <p>Data privacy protocols, risk assessment, and system compliance standards.</p>
+          <p>Exploratory data analysis (EDA), data cleaning, SQL querying, R programming, and narrative storytelling.</p>
         </div>
         <div class="cert-card">
           <h3>Google IT Support</h3>
           <div class="issuer">Google / Coursera</div>
-          <p>Systems infrastructure, operating environments, and network troubleshooting.</p>
+          <p>System infrastructure administration, networking fundamentals, and enterprise technical troubleshooting.</p>
         </div>
       </div>
     </section>
@@ -820,11 +867,11 @@
     <section id="contact">
       <h2 class="section-title">Let's Connect</h2>
       <p style="color: var(--muted); max-width: 620px; margin-bottom: 1.75rem;">
-        Whether you are seeking to optimize your product funnel, build automated BI reporting, or translate behavioral insights into pipeline growth, let's start a conversation.
+        Whether you are seeking to optimize your product funnel, understand your numbers, or translate behavioral telemetry into sustainable pipeline growth, let's start a conversation.
       </p>
       <div class="hero-cta">
-        <a href="mailto:your-email@example.com" class="btn btn-primary">Send an Email</a>
-        <a href="https://linkedin.com" target="_blank" class="btn btn-secondary">Connect on LinkedIn</a>
+        <a href="mailto:ifeoma.chuks.official@gmail.com" class="btn btn-primary">Send an Email</a>
+        <a href="https://www.linkedin.com/in/ifeomachuks/" target="_blank" class="btn btn-secondary">Connect on LinkedIn</a>
       </div>
     </section>
   </main>
